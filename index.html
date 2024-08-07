@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEPİYİ.COM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://hepiyi.com.tr/assets/images/logo/logo.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- MobileSidebar -->
+    <div class="topMain">
+      <div class="menu-container d-xxl-none d-xl-none d-lg-none">
+        <div class="mobileNav d-sm-block d-md-block" id="mobileNav">
+          <img
+            src="https://hepiyi.com.tr/assets/images/logo/logo.svg"
+            class="img-fluid d-sm-block d-md-block mobileLogo"
+            alt=""
+          />
+          <div class="burger-menu mt-lg-0 mt-3 pe-2" id="burgerMenu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+          <a href="#">Ana Sayfa</a>
+          <a href="#">Hakkımızda</a>
+          <a href="#" id="hizmetlerLink">Hizmetler</a>
+          <a href="#">İletişim</a>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="sub-sidebar" id="subSidebar">
+          <a href="#">
+            <img src="images/books_50px.png" alt="Hizmet 1" />
+            Hizmet 1
+          </a>
+          <a href="#">
+            <img src="images/hospital_50px.png" alt="Hizmet 2" />
+            Hizmet 2
+          </a>
+          <a href="#">
+            <img src="images/School_50px.png" alt="Hizmet 3" />
+            Hizmet 3
+          </a>
+        </div>
+      </div>
+      <!-- Desktop Navbar -->
+      <nav class="navbar">
+        <ul class="nav-links">
+          <img
+            src="https://hepiyi.com.tr/assets/images/logo/logo.svg"
+            class="img-fluid"
+            alt="Logo"
+          />
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link">
+              Ürünler <span class="dropdown-arrow">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <div class="row">
+                <div class="col-lg-6 mb-4">
+                  <div class="row align-items-center">
+                    <div class="col-3">
+                      <img
+                        src="https://hepiyi.com.tr/assets/images/illustrations/neden-sigorta-sirketi.svg"
+                        alt="Hizmet"
+                        class="img-fluid dropmenuImage"
+                      />
+                    </div>
+                    <div class="col">
+                      <h6 class="DropTitle">Kasko</h6>
+                      <p>
+                        Siz Yolun Tadını Çıkartın Diger Olasılıklar Terminal
+                        Altında
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Diğer sütunlar buraya eklenebilir -->
+                <div class="col-lg-6">
+                  <div class="row align-items-center">
+                    <div class="col-3">
+                      <img
+                        src="https://hepiyi.com.tr/assets/images/illustrations/kaza2.svg"
+                        alt="Hizmet"
+                        class="img-fluid dropmenuImage"
+                      />
+                    </div>
+                    <div class="col">
+                      <h6 class="DropTitle">Trafik Sigortası</h6>
+                      <p>Zorunlulukları Kolaylaştırmak İçin Hepsi Sigortada!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="row align-items-center">
+                    <div class="col-3">
+                      <img
+                        src="https://hepiyi.com.tr/assets/images/illustrations/yatarak-tedavi.svg"
+                        alt="Hizmet"
+                        class="img-fluid dropmenuImage"
+                      />
+                    </div>
+                    <div class="col">
+                      <h6 class="DropTitle">Tamamlayıcı Saglık</h6>
+                      <p>Hiç Eksik Kalmasın Diye Size Özel avantajlar</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row align-items-center">
+                    <div class="col-3">
+                      <img
+                        src="https://hepiyi.com.tr/assets/images/illustrations/seyahat-saglik.svg"
+                        alt="Hizmet"
+                        class="img-fluid dropmenuImage"
+                      />
+                    </div>
+                    <div class="col">
+                      <h6 class="DropTitle">Seyahat Saglık</h6>
+                      <p>Keyifli ve Güvenli Seyahatler Hepİyi İle Mümkün!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row align-items-center">
+                    <div class="col-3">
+                      <img
+                        src="https://hepiyi.com.tr/assets/images/illustrations/menu-dask.svg"
+                        alt="Hizmet"
+                        class="img-fluid dropmenuImage"
+                      />
+                    </div>
+                    <div class="col">
+                      <h6 class="DropTitle">Dask</h6>
+                      <p>
+                        HerAn güvende hissetmek için <br />
+                        Hepİyi Sigorta Yanınızda
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-decoration-none DropTitle">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-decoration-none DropTitle"
+              >Anlaşmalı Kurumlar</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-decoration-none DropTitle"
+              >Hasar İşlemleri</a
+            >
+          </li>
+          <button class="btn btn-info rounded-pill p-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+              />
+            </svg>
+            Hesabım
+          </button>
+          <button class="btn btn-danger rounded-pill p-3 ms-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-chat-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+              />
+            </svg>
+            Teklif Al
+          </button>
+        </ul>
+      </nav>
+      <div class="text-center mt-lg-5 text-white headerText">
+        <h3>Hangi Ürünümüz İçin teklif almayı düşünüyorsunuz</h3>
+        <p class="text-white fs-4">
+          Sadece birkaç adımda size en uygun teklifi vereceğiz.
+        </p>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container cardContainer">
+      <div class="row mb-4 mb-sm-3">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="Cardimage">
+              <img
+                src="https://hepiyi.com.tr/assets/images/illustrations/neden-sigorta-sirketi.svg"
+                class="card-img-top w-75"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center border-top-0">
+              <h5 class="card-title">Kasko</h5>
+
+              <button class="button">
+                <span class="button-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="29"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </span>
+                <span class="button-links">
+                  <a> Teklif Al </a>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="Cardimage">
+              <img
+                src="https://hepiyi.com.tr/assets/images/illustrations/kaza2.svg"
+                class="card-img-top w-75 cardTwo"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center border-top-0">
+              <h5 class="card-title">Trafik Sigortası</h5>
+
+              <button class="button">
+                <span class="button-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="29"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </span>
+                <span class="button-links">
+                  <a> Teklif Al </a>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="Cardimage">
+              <img
+                src="https://hepiyi.com.tr/assets/images/illustrations/yatarak-tedavi.svg"
+                class="card-img-top w-75 cardTwo"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center border-top-0">
+              <h5 class="card-title">Tamamlayıcı Saglık</h5>
+
+              <button class="button">
+                <span class="button-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="29"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </span>
+                <span class="button-links">
+                  <a> Teklif Al </a>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="Cardimage">
+              <img
+                src="https://hepiyi.com.tr/assets/images/illustrations/seyahat-saglik.svg"
+                class="card-img-top w-75"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center border-top-0">
+              <h5 class="card-title">Seyahat Saglık</h5>
+
+              <button class="button">
+                <span class="button-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="29"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </span>
+                <span class="button-links">
+                  <a> Teklif Al </a>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="Cardimage">
+              <img
+                src="https://hepiyi.com.tr/assets/images/illustrations/home-konut-sigortasi.svg"
+                class="card-img-top w-75 cardTwo"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center border-top-0">
+              <h5 class="card-title">Konut Sigortası</h5>
+
+              <button class="button">
+                <span class="button-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="29"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </span>
+                <span class="button-links">
+                  <a> Teklif Al </a>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="Cardimage">
+              <img
+                src="https://hepiyi.com.tr/assets/images/illustrations/menu-dask.svg"
+                class="card-img-top w-75 cardTwo"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center border-top-0">
+              <h5 class="card-title">Dask</h5>
+
+              <button class="button">
+                <span class="button-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="29"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                    />
+                  </svg>
+                </span>
+                <span class="button-links">
+                  <a> Teklif Al </a>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advantages -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offerPages">
+          <div class="bg-body-tertiary p-3 rounded-4">
+            <h3 class="DropTitle">Hızlı Teklif</h3>
+            <p>Sadece birkaç kısa adımda, kolayca teklif alabilirsiniz.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 offerPages">
+          <div class="bg-body-tertiary p-3 rounded-4">
+            <h3 class="DropTitle">Karşılaştır,Kişiselleştir</h3>
+            <p>
+              Teklifleri karşılaştırabilir, ihtiyaçlarınıza göre
+              kişiselleştirebilirsiniz.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 offerPages">
+          <div class="bg-body-tertiary p-4 rounded-4">
+            <h3 class="DropTitle">Kolayca Satın Al</h3>
+            <p>Tek tıkla poliçe almanın keyfini yaşayın.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- İnformation -->
+    <section class="infoSection">
+      <div class="container infoContent">
+        <div class="row">
+          <div class="col-lg-12 textBlue">
+            <h4>Avantajlı Fiyatlarla Sigorta Tekliflerinizi Hemen Alın</h4>
+            <p>
+              Kasko sigortasından zorunlu trafik sigortasına, tamamlayıcı sağlık
+              sigortasından seyahat sağlık sigortasına, Hepiyi Sigorta'nın
+              sunduğu avantajlı sigortacılık ürünleri arasından siz de hemen
+              ihtiyacınıza uygun ürünler için sigorta teklifi alabilir ve rahat
+              edebilirsiniz
+            </p>
+            <a href="">Devamını Gör</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row rowOne">
+          <div class="col-lg-3 colOne">
+            <img
+              src="https://hepiyi.com.tr/assets/images/logo/logo-white.svg"
+              alt=""
+              class="img-fluid w-50 mb-sm-2"
+            />
+            <ul class="list-unstyled addressLink mt-lg-4 d-flex flex-row">
+              <li>
+                <a href=""
+                  ><img
+                    src="https://hepiyi.com.tr/assets/images/social-media/facebook.svg"
+                    alt=""
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="https://hepiyi.com.tr/assets/images/social-media/twitter.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="https://hepiyi.com.tr/assets/images/social-media/instagram.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="https://hepiyi.com.tr/assets/images/social-media/linkedin.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="https://hepiyi.com.tr/assets/images/social-media/youtube.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </li>
+            </ul>
+            <img
+              src="https://hepiyi.com.tr/assets/images/logo/hepiyi-icon-2.png"
+              class="img-fluid pt-5"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 footercol">
+            <h3 class="DropTitle ms-5">Hızlı Erişim</h3>
+            <ul class="list-unstyled d-flex flex-column ms-5 fastAccessLink">
+              <li>Yardım Destek</li>
+              <li>Anlaşmalı Kurumlar</li>
+              <li>Hepİyi Çözüm Merkezi</li>
+              <li>Acentelik Başvurusu</li>
+              <li>Servis Başvurusu</li>
+              <li>Kasko Deger Listesi</li>
+              <li>Mtv Hesaplama</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 footercol">
+            <h3 class="DropTitle">Ürünler</h3>
+            <ul class="list-unstyled d-flex flex-column fastAccessLink">
+              <li>Trafik Sigortası</li>
+              <li>Trafik Sigortası Teklif Al</li>
+              <li>Kasko Sigortası</li>
+              <li>Elektrikli araç kaskosu</li>
+              <li>Kasko Sigortası Teklif al</li>
+              <li>Seyahat Saglık Sigortası</li>
+              <li>Seyahat Saglık Sigortası Teklif Al</li>
+              <li>Tamamlayıcı Saglık Sigortası</li>
+              <li>Konut Sigortası</li>
+              <li>Konut Sigortası Teklif Al</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 footercol">
+            <h3 class="DropTitle">Hakkımızda</h3>
+            <ul class="list-unstyled d-flex flex-column fastAccessLink">
+              <li>Bizi Tanıyın</li>
+              <li>Yönetim Kurulu</li>
+              <li>Finansal Bilgiler</li>
+              <li>Medya Odası</li>
+              <li>Duyurular</li>
+              <li>Blog</li>
+              <li>Sigorta Sözlügü</li>
+              <li>İletişim</li>
+            </ul>
+          </div>
+          <div class="accordion mt-5 d-lg-none" id="accordionExample">
+            <div class="accordion-item bg-danger-subtle">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed show"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <small class="pe-4">Hızlı Erişim</small>
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item bg-danger-subtle">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed show"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <small class="pe-4">Ürünler</small>
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item bg-danger-subtle">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed show"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <small class="pe-4">Hakkımızda</small>
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item bg-danger-subtle">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed show"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <small class="pe-4">Yasal Uyarılar</small>
+                </button>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-sm-1 d-flex flex-row justify-content-between">
+          <div class="col-10 text-white">
+            <img
+              src="https://hepiyi.com.tr/assets/images/logo/logo-dogan-dark-blue.svg"
+              class="img-fluid mb-3"
+              alt=""
+            />
+            <p>
+              © 2022 - 2024 <strong>EMRE SEFEROGLU</strong> Tüm hakları saklıdır
+            </p>
+          </div>
+          <div class="col-2">
+            <img
+              src="https://hepiyi.com.tr/assets/images/general/etbis-qr.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
