@@ -18,131 +18,104 @@ body {
 }
 
 /* Mobile Sidebar */
-.menu-container {
-  position: relative;
-}
-
-.burger-menu {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.burger-menu div {
-  width: 30px;
-  height: 3px;
-  background-color: #6560b8;
-  margin: 6px 0;
-  transition: 0.4s;
-  z-index: 1;
-}
-
+/* Sidebar Styling */
+/* Sidebar Styling */
 .sidebar {
-  height: 100%;
-  width: 0;
   position: fixed;
   top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  z-index: 1;
+  right: -250px; /* Start hidden off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: right 0.3s;
+  z-index: 1000;
+  padding: 20px;
 }
 
 .sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
   display: block;
-  transition: 0.3s;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  background-color: #575757;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.5s, opacity 0.5s;
-}
-
-.open .sidebar {
-  width: 250px;
-}
-
-.open .overlay {
-  visibility: visible;
-  opacity: 1;
-}
-
-.open .burger-menu .bar1 {
-  transform: rotate(-45deg) translate(-6px, 7px);
-}
-
-.open .burger-menu .bar2 {
-  opacity: 0;
-}
-
-.open .burger-menu .bar3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
+/* Sub Sidebar Styling */
 .sub-sidebar {
-  height: 100%;
-  width: 0;
   position: fixed;
   top: 0;
-  right: 0;
-  background-color: #333;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  z-index: 2;
+  right: -300px; /* Start hidden off-screen */
+  width: 300px;
+  height: 100%;
+  background-color: #444;
+  color: #fff;
+  transition: right 0.3s;
+  z-index: 1001;
+  padding: 20px;
 }
 
 .sub-sidebar a {
-  padding: 10px 20px;
+  display: block;
+  padding: 15px;
+  color: #fff;
   text-decoration: none;
-  font-size: 18px;
-  color: #f1f1f1;
-  display: flex;
-  align-items: center;
-  transition: 0.3s;
 }
 
 .sub-sidebar a:hover {
-  color: #ddd;
+  background-color: #666;
 }
 
-.sub-sidebar img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.sub-sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  background: none;
+.back-btn {
+  display: block;
+  background: #555;
   border: none;
-  color: #f1f1f1;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #555;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1001; /* Ensure it is above other content */
+}
+
+/* Burger Menu Styling */
+.burger-menu {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  right: -10px; /* Adjust as needed */
+  transform: translateY(-50%);
+  z-index: 1001;
+}
+
+.burger-menu .bar1, .burger-menu .bar2, .burger-menu .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+.show-sidebar {
+  right: 0;
+}
+
+.show-sub-sidebar {
+  right: 0;
 }
 
 /* Desktop Navbar */
@@ -454,7 +427,8 @@ body {
 
 @media (min-width: 576px) and (max-width: 767px) {
   .burger-menu {
-    right: 10px !important;
+    top: -1px;
+    right: -15px !important;
   }
 
   .cardContainer {
@@ -558,6 +532,6 @@ body {
   }
 
   .burger-menu {
-    transform: translateX(-100%) !important;
+    right:5px;
   }
 }

@@ -1,37 +1,29 @@
 document.getElementById("burgerMenu").addEventListener("click", function () {
-  document.body.classList.toggle("open");
-  document.getElementById("mobileNav").style.zIndex = 1;
+  document.getElementById("sidebar").classList.add("show-sidebar");
+  document.getElementById("burgerMenu").style.display = "none"; // Hide burger menu
 });
 
-document.getElementById("closebtn").addEventListener("click", function () {
-  document.body.classList.remove("open");
-  document.getElementById("subSidebar").style.width = "30";
-  document.getElementById("overlay").style.visibility = "hidden";
-  document.getElementById("overlay").style.opacity = "1";
-});
-
-document.getElementById("overlay").addEventListener("click", function () {
-  document.body.classList.remove("open");
-  document.getElementById("subSidebar").style.width = "0";
-  document.getElementById("overlay").style.visibility = "hidden";
-  document.getElementById("overlay").style.opacity = "0";
+document.getElementById("closeBtn").addEventListener("click", function () {
+  document.getElementById("sidebar").classList.remove("show-sidebar");
+  document.getElementById("burgerMenu").style.display = "block"; // Show burger menu
 });
 
 document
   .getElementById("hizmetlerLink")
-  .addEventListener("click", function (event) {
-    event.preventDefault(); // Linkin varsayılan davranışını engeller
-    document.getElementById("subSidebar").style.width = "250px";
-    document.getElementById("overlay").style.visibility = "visible";
-    document.getElementById("overlay").style.opacity = "1";
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("sidebar").classList.remove("show-sidebar");
+    document.getElementById("subSidebar").classList.add("show-sub-sidebar");
+    document.getElementById("burgerMenu").style.display = "none"; // Hide burger menu
   });
 
-document.getElementById("subClosebtn").addEventListener("click", function () {
-  document.getElementById("subSidebar").style.width = "0";
-  document.getElementById("overlay").style.visibility = "hidden";
-  document.getElementById("overlay").style.opacity = "0";
+document.getElementById("backBtn").addEventListener("click", function () {
+  document.getElementById("subSidebar").classList.remove("show-sub-sidebar");
+  document.getElementById("sidebar").classList.add("show-sidebar");
+  document.getElementById("burgerMenu").style.display = "none"; // Keep burger menu hidden
 });
 
+// Drop menü
 document.addEventListener("DOMContentLoaded", function () {
   var dropdown = document.querySelector(".nav-item.dropdown");
   var dropdownMenu = document.querySelector(".dropdown-menu");
